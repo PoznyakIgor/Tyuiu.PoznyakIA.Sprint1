@@ -24,18 +24,21 @@ namespace Tyuiu.PoznyakIA.Sprint1.Task2.V9
             Console.WriteLine(" Выполнил: Позняк Игорь Андреевич | ИСТНб-23-1                       ");
             Console.WriteLine("");
             Console.WriteLine("* УСЛОВИЕ:                                                                ");
-            Console.WriteLine(" Написать программу, которая запрашивает у пользователя исходные данные,   ");
-            Console.WriteLine("вычисляет результат по формуле (1+3*x)/(4*y) и печатает результат на экране.   ");
+            Console.WriteLine(" Написать программу, которая запрашивает у пользователя исходные данные,    ");
+            Console.WriteLine("выполняет указанные расчёты и печатает результат на экране.               ");
             Console.WriteLine("                                                                         ");
             Console.WriteLine("");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        ");
             Console.WriteLine("");
-            Console.WriteLine("(1+3*x)/(4*y)                                                             ");
+            int r;
+            Console.WriteLine("Введение радиус окружности");
+            r = Convert.ToInt32(Console.ReadLine());
+         
             Console.WriteLine("**");
             Console.WriteLine("РЕЗУЛЬТАТ:                                                               ");
             Console.WriteLine("**");
 
-            Console.WriteLine(ds.Calculate());
+            Console.WriteLine("Объем шара равен:" + ds.CalculateVolumeCircle(r));
 
             Console.ReadLine();
         }

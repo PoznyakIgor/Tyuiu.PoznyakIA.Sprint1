@@ -12,9 +12,9 @@ namespace Tyuiu.PoznyakIA.Sprint1.Task2.V9.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            int x = 2;
+            int x = 3;
             var res = ds.CalculateVolumeCircle(x);
-            Assert.AreEqual(33.5146666667, res);
+            Assert.AreEqual(113.04, res);
         }
     }
 }

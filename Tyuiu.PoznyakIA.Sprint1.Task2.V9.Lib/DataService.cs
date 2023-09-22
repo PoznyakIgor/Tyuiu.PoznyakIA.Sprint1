@@ -12,7 +12,7 @@ namespace Tyuiu.PoznyakIA.Sprint1.Task2.V9.Lib
         public double CalculateVolumeCircle(int r)
         {
 
-            return ((4 / 3) * 3.142 * (r*r*r));
+            return ((4.0 / 3.0) * 3.14 * (r*r*r));
         }
     }
 }

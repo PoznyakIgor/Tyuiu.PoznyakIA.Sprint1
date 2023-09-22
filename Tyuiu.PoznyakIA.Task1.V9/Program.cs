@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.PoznyakIA.Sprint1.Task0.V3.Lib;
+using Tyuiu.PoznyakIA.Sprint1.Task1.V9.Lib;
 
-namespace Tyuiu.PoznyakIA.Sprint1.Task0.V3
+
+namespace Tyuiu.PoznyakIA.Sprint1.Task1.V9
 {
     class Program
     {
@@ -24,21 +25,27 @@ namespace Tyuiu.PoznyakIA.Sprint1.Task0.V3
             Console.WriteLine(" Выполнил: Позняк Игорь Андреевич | ИСТНб-23-1                       ");
             Console.WriteLine("");
             Console.WriteLine("* УСЛОВИЕ:                                                                ");
-            Console.WriteLine(" Написать программу, которая вычисляет выражение (6/2*3)/9            ");
-            Console.WriteLine(" и печатает результат на экране.                                         ");
+            Console.WriteLine(" Написать программу, которая запрашивает у пользователя исходные данные,   ");
+            Console.WriteLine("вычисляет результат по формуле (1+3*x)/(4*y) и печатает результат на экране.");
             Console.WriteLine("                                                                         ");
             Console.WriteLine("");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        ");
             Console.WriteLine("");
-            Console.WriteLine("(6/2*3)/9                                                              ");
+            double x, y;
+            Console.WriteLine("Введение значение X:");
+            x = Convert.ToDouble(Console.ReadLine());
+
+
+            Console.WriteLine("Введение значение Y:");
+            y = Convert.ToDouble(Console.ReadLine());
+                            
             Console.WriteLine("**");
             Console.WriteLine("РЕЗУЛЬТАТ:                                                               ");
             Console.WriteLine("**");
 
-            Console.WriteLine(ds.Calculate());
+            Console.WriteLine(ds.Calculate(x,y));
 
             Console.ReadLine();
-            
         }
     }
 }

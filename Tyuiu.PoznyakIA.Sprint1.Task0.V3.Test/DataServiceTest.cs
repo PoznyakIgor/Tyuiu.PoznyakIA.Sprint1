@@ -13,7 +13,7 @@ namespace Tyuiu.PoznyakIA.Sprint1.Task0.V3.Test
         {
             DataService ds = new DataService();
             var res = ds.Calculate();
-            Assert.AreEqual(6, res);
+            Assert.AreEqual(6, res); 
         }
     }
 }

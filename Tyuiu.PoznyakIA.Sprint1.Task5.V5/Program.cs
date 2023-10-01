@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.PoznyakIA.Sprint1.Task4.V18.Lib;
+using Tyuiu.PoznyakIA.Sprint1.Task5.V5.Lib;
 
-namespace Tyuiu.PoznyakIA.Sprint1.Task4.V18
+namespace Tyuiu.PoznyakIA.Sprint1.Task5.V5
 {
     class Program
     {
@@ -19,7 +19,7 @@ namespace Tyuiu.PoznyakIA.Sprint1.Task4.V18
             Console.WriteLine("                                                                          ");
             Console.WriteLine(" Спринт #1                                                                ");
             Console.WriteLine(" Тема: Алгоритмы линейной структуры                                       ");
-            Console.WriteLine(" Задание #4                                                               ");
+            Console.WriteLine(" Задание #5                                                               ");
             Console.WriteLine(" Вариант #9                                                               ");
             Console.WriteLine(" Выполнил: Позняк Игорь Андреевич | ИСТНб-23-1                            ");
             Console.WriteLine("                                                                          ");
@@ -31,18 +31,18 @@ namespace Tyuiu.PoznyakIA.Sprint1.Task4.V18
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        ");
             Console.WriteLine("                                                                          ");
 
-            double x, y;
+            double x;
 
             Console.WriteLine("Введите число x:");
             x = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите число y:");
-            y = Convert.ToDouble(Console.ReadLine());
+            
 
             Console.WriteLine("*                                                                        *");
             Console.WriteLine("РЕЗУЛЬТАТ:                                                                ");
             Console.WriteLine("*                                                                        *");
 
-            Console.WriteLine("√3+x/(xy)^2  = " + ds.Calculate(x,y));
+            int res = Convert.ToInt32(ds.Calculate(x));
+            Console.WriteLine(res);
 
             Console.ReadLine();
         }
